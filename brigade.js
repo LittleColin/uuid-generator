@@ -1,4 +1,5 @@
 const { events, Job } = require("brigadier");
+const { devops } = require("cybercohesion-devops");
 
 events.on("push", function(e, project) {
   console.log("received push for commit " + e.commit)
