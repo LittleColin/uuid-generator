@@ -1,5 +1,5 @@
 const { events, Job } = require("brigadier");
-events.on("push", () => {
+events.on("push", function(e, project) {
     console.log('Testing');
 });
 
