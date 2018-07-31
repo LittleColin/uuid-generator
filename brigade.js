@@ -1,5 +1,7 @@
 const { events, Job } = require("brigadier");
 const { devops } = require("./devops");
 
-console.log(devops.hello("world"));
+events.on("push", () => {
+    console.log(devops.hello("world"));
+});
 
